@@ -13,17 +13,35 @@ body{
     color:#333;
 }
 
+/* ✅ HERO HEADER (UPDATED) */
 header{
-    background:#1f2937;
+    position:relative;
+    background:url("images/inspections/hero.jpg") center/cover no-repeat;
     color:white;
-    padding:40px 20px;
+    padding:80px 20px;
     text-align:center;
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+header *{
+    position:relative;
+    z-index:2;
 }
 
 /* LOGO */
 .logo{
-    max-height:90px;
-    margin-bottom:10px;
+    max-height:110px;
+    margin-bottom:15px;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.5));
 }
 
 .container{
@@ -106,7 +124,7 @@ ul{
 
 <header>
 
-    <!-- LOGO ADDED HERE -->
+    <!-- LOGO -->
     <img src="images/logo.png" alt="Peacemaker Inspections Logo" class="logo">
 
     <h1>Peacemaker Inspections LLC</h1>
@@ -126,6 +144,7 @@ ul{
             Call Now
         </a>
     </div>
+
 </header>
 
 <section class="container">
@@ -169,7 +188,6 @@ ul{
     </div>
 </section>
 
-<!-- NEW PHOTO SECTION -->
 <section class="container">
     <h2>Recent Inspections</h2>
     <p>Real-world inspection work performed for clients across the Gulf Coast.</p>
