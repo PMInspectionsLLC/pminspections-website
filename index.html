@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Peacemaker Inspections LLC</title>
+
 <style>
 body{
     margin:0;
@@ -11,20 +12,30 @@ body{
     line-height:1.6;
     color:#333;
 }
+
 header{
     background:#1f2937;
     color:white;
-    padding:60px 20px;
+    padding:40px 20px;
     text-align:center;
 }
+
+/* LOGO */
+.logo{
+    max-height:90px;
+    margin-bottom:10px;
+}
+
 .container{
     max-width:1100px;
     margin:auto;
     padding:40px 20px;
 }
+
 h1,h2{
     margin-bottom:15px;
 }
+
 .button{
     display:inline-block;
     background:#2563eb;
@@ -34,36 +45,87 @@ h1,h2{
     border-radius:6px;
     margin-top:15px;
 }
+
+.phone-top{
+    margin-top:15px;
+    font-size:16px;
+    opacity:0.95;
+}
+
+.phone-top a{
+    color:white;
+    text-decoration:underline;
+}
+
 .services{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
+
 .card{
     border:1px solid #ddd;
     padding:20px;
     border-radius:8px;
 }
+
 .highlight{
     background:#f3f4f6;
 }
+
+/* PHOTO GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
 footer{
     background:#111827;
     color:white;
     text-align:center;
     padding:25px;
 }
+
 ul{
     padding-left:20px;
 }
 </style>
+
 </head>
 <body>
 
 <header>
+
+    <!-- LOGO ADDED HERE -->
+    <img src="images/logo.png" alt="Peacemaker Inspections Logo" class="logo">
+
     <h1>Peacemaker Inspections LLC</h1>
+
     <p>Independent Pre-Purchase Inspections Across the Alabama Gulf Coast, Florida Panhandle, and Mississippi Gulf Coast</p>
-    <a class="button" href="https://form.jotform.com/261676735996074" target="_blank">Request Inspection</a>
+
+    <div class="phone-top">
+        📞 Call/Text: <a href="tel:12515169443">(251) 516-9443</a>
+    </div>
+
+    <a class="button" href="https://form.jotform.com/261676735996074" target="_blank">
+        Request Inspection
+    </a>
+
+    <div>
+        <a class="button" href="tel:12515169443">
+            Call Now
+        </a>
+    </div>
 </header>
 
 <section class="container">
@@ -104,6 +166,21 @@ ul{
             <h3>Heavy Equipment</h3>
             <p>Construction, agricultural, and industrial equipment.</p>
         </div>
+    </div>
+</section>
+
+<!-- NEW PHOTO SECTION -->
+<section class="container">
+    <h2>Recent Inspections</h2>
+    <p>Real-world inspection work performed for clients across the Gulf Coast.</p>
+
+    <div class="gallery">
+        <img src="images/inspections/photo1.jpg" alt="Engine inspection">
+        <img src="images/inspections/photo2.jpg" alt="Boat inspection">
+        <img src="images/inspections/photo3.jpg" alt="Undercarriage inspection">
+        <img src="images/inspections/photo4.jpg" alt="Diagnostic scan">
+        <img src="images/inspections/photo5.jpg" alt="Vehicle exterior check">
+        <img src="images/inspections/photo6.jpg" alt="Equipment inspection">
     </div>
 </section>
 
@@ -161,12 +238,18 @@ ul{
     <h3>Pricing</h3>
     <p>Starting at $199. Final pricing varies based on asset type, location, travel, and inspection complexity.</p>
 
-    <a class="button" href="https://form.jotform.com/261676735996074" target="_blank">Request Inspection</a>
+    <a class="button" href="https://form.jotform.com/261676735996074" target="_blank">
+        Request Inspection
+    </a>
 </section>
 
 <footer>
     <p>Peacemaker Inspections LLC</p>
+
+    <p>📞 Call/Text: <a href="tel:12515169443" style="color:white;">(251) 516-9443</a></p>
+
     <p>Email: pminspect3@gmail.com</p>
+
     <p>Serving the Alabama Gulf Coast, Florida Panhandle, and Mississippi Gulf Coast</p>
 </footer>
 
